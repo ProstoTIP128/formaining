@@ -1,0 +1,242 @@
+body{
+    margin: 0;                              /*убирает отступы от всех краев*/
+    background-image: url(https://altanschool.s3.eu-central-1.amazonaws.com/learns/1697021662483_headerpic.jpg); /*изображение фона*/
+    background-size: 100%;                  /*размер фона*/
+    background-position-y: -50px;           /*изображение чуть поднято наверх*/
+    background-attachment: fixed;           /*фиксация фона*/
+}
+
+header{
+    height: 100%;               /*высота*/
+    padding: 30px;          /*внутренний отступ*/
+    text-align: right;      /*текст выровнени влево*/
+    color: rgb(0, 0, 91); /*цвет текста*/
+    font-size: 25px;        /*размер текста*/
+}
+
+h1{
+    padding-top: 50px;  /*Дополнительный отступ заголовка*/
+    font-size: 80px;    /*размер заголовка*/
+    color:rgb(255, 255, 255);  /*цвет*/
+}
+
+main{
+    height: 1000px;   /*высота основной части*/
+    display: flex;
+}
+
+footer{
+    height: 100%;    /*высота*/
+    text-align: left;  /*текст выровннен влево*/
+    padding: 50px;   /*внутренний оступ*/
+    color: white;  /*цвет текста*/
+    font-size: 20px;  /*размер текста*/
+}
+
+.social{
+    list-style: none; /*убирает маркеры*/
+    display: flex; /*отображает в ряд*/
+    align-items: left; /*выравнивает иконки по центру внутри каждого пункта*/
+    justify-content: left; /*выравнивает все иконки по центру страницы*/
+    margin: 0;
+    padding: 0;
+}
+
+.social li {
+    padding-left: 10px;
+    padding-top: 20px;
+} 
+
+.claas{
+    width: 30%;
+    height: 30%;
+    background-color: blue;
+        background: radial-gradient(circle, #ff7b00, rgb(21, 255, 0));
+} 
+
+.pokemon{
+    width: 30%;
+    height: 30%;
+    background-color: yellow;
+        background: radial-gradient(circle at top left, #0008ff, #a19488);
+}
+
+.box{
+    width: 30%;
+    height: 30%;
+    background-color: forestgreen;
+    background: radial-gradient(circle at right, #f42424, #fff700);
+}
+
+.red{
+    width: 30%;
+    height: 30%;
+    background-color: red;
+    background: radial-gradient(#6803ff, #1b1813);
+}
+
+.claas li{
+  background-color: blanchedalmond; /*цвет фона*/
+  line-height: 2em; /*межстрочный интервал*/
+  margin-top: 10px; /*отступ с верхней стороны для каждого блока*/
+  padding-left: 10px; /*отступ с левой стороны*/
+  border-radius: 3em; /*округлени углов*/
+  width: 60%; /*ширина*/
+  height: 50px; /*высота*/
+  list-style-type: square; /*тип маркера*/
+  list-style-position: inside; /*расположения маркера*/
+  list-style-type: "\1F4C8"; /*эмоджи*/
+}
+.claas li:hover{
+    background-color: brown;
+    color: white;
+    list-style-type: "\274C";
+    width: 70%;
+    height: 70px;
+}
+
+    .pokemon li{
+        background-color: blanchedalmond; /*цвет фона*/
+        line-height: 2em; /*межстрочный интервал*/
+        margin-top: 10px; /*отступ с верхней стороны для каждого блока*/
+        padding-left: 10px; /*отступ с левой стороны*/
+        border-radius: 3em; /*округлени углов*/
+        width: 60%; /*ширина*/
+        height: 50px; /*высота*/
+        list-style-type: square; /*тип маркера*/
+        list-style-position: inside; /*расположения маркера*/
+        list-style-type: "\1F451"; /*эмоджи*/
+      }
+  .pokemon li:hover{
+    background-color: brown;
+    color: white;
+    list-style-type: "\274C";
+    width: 70%;
+    height: 70px;
+}
+
+.box li{
+    background-color: blanchedalmond; /*цвет фона*/
+    line-height: 2em; /*межстрочный интервал*/
+    margin-top: 10px; /*отступ с верхней стороны для каждого блока*/
+    padding-left: 10px; /*отступ с левой стороны*/
+    border-radius: 3em; /*округлени углов*/
+    width: 60%; /*ширина*/
+    height: 50px; /*высота*/
+    list-style-type: square; /*тип маркера*/
+    list-style-position: inside; /*расположения маркера*/
+    list-style-type: "\1F52B"; /*эмоджи*/
+  }
+  .box li:hover{
+    background-color: brown;
+    color: white;
+    list-style-type: "\274C";
+    width: 70%;
+    height: 70px;
+}
+
+.red li{
+    background-color: blanchedalmond; /*цвет фона*/
+    line-height: 2em; /*межстрочный интервал*/
+    margin-top: 10px; /*отступ с верхней стороны для каждого блока*/
+    padding-left: 10px; /*отступ с левой стороны*/
+    border-radius: 3em; /*округлени углов*/
+    width: 60%; /*ширина*/
+    height: 50px; /*высота*/
+    list-style-type: square; /*тип маркера*/
+    list-style-position: inside; /*расположения маркера*/
+    list-style-type: "\1F480"; /*эмоджи*/
+  }
+.red li:hover{
+    background-color: brown;
+    color: white;
+    list-style-type: "\274C";
+    width: 70%;
+    height: 70px;
+}
+
+.nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: blue;
+    font-size: 20px;
+    width: 100%;
+    border: 2px solid white;
+    text-align: center;
+    overflow: hidden;
+}
+
+.nav{
+    position: sticky;
+    top: 0;
+}
+
+.nav a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 8px 16px;
+    float: left;
+}
+
+.nav a:hover{
+    background-color: antiquewhite;
+    color: black;
+}
+
+.blok{
+    width: 100%;
+    height: 50%;
+}
+
+.nav form{
+    float: right;
+}
+
+.orr{
+    float: left;
+    width: 100%;
+    height: 190px;
+    background-color: pink;
+    animation-name: color;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-fill-mode: none;
+    animation-play-state: running;
+}
+
+@keyframes color{
+
+   0% { background-color: pink;}
+
+   25%{ background-color: blue;}
+
+   50%{ background-color: green;}
+
+   75%{ background-color: red;}
+
+   100%{background-color: yellow;}
+}
+
+.orr h1{
+    font-size: 70px;
+    text-align: left;
+    color: white;
+    animation-name: Move;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes Move{
+    from{
+        padding-left: 0%;
+    }
+
+    to{ padding-left: 82%;}
+}
